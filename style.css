@@ -28,7 +28,6 @@ body {
   padding: 0 20px;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
@@ -38,7 +37,6 @@ body {
   animation: fadeIn 0.8s ease-in-out;
 }
 
-/* Top Bar */
 .top-bar {
   background-color: var(--dark);
   color: #94a3b8;
@@ -58,7 +56,6 @@ body {
   margin-right: 5px;
 }
 
-/* Navbar */
 .navbar {
   background: #ffffff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
@@ -123,7 +120,6 @@ body {
   background-color: var(--primary-hover);
 }
 
-/* Hero */
 .hero {
   position: relative;
   background: #0f172a url('images/hero.jpg') center/cover no-repeat;
@@ -201,7 +197,6 @@ body {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Sections */
 section {
   padding: 75px 0;
 }
@@ -225,7 +220,6 @@ section {
   margin-top: 5px;
 }
 
-/* About */
 .about-section {
   background: #ffffff;
 }
@@ -266,7 +260,6 @@ section {
   margin-bottom: 6px;
 }
 
-/* Entities Section */
 .entities-section {
   background: var(--light-bg);
 }
@@ -294,7 +287,7 @@ section {
   color: var(--primary);
   padding: 4px 12px;
   border-radius: 20px;
-  font-size: 0.75srem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   display: inline-block;
@@ -347,7 +340,6 @@ section {
   background-color: var(--primary);
 }
 
-/* 3 Image slots grid for tomorrow */
 .entity-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -372,7 +364,6 @@ section {
   transform: scale(1.08);
 }
 
-/* Training Programs Grid */
 .training-section {
   background: #ffffff;
 }
@@ -409,10 +400,14 @@ section {
   margin-bottom: 10px;
 }
 
-/* Careers Section */
+/* White text for careers section */
 .careers-section {
   background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-  color: #ffffff;
+  color: #ffffff !important;
+}
+
+.careers-section .section-title h2 {
+  color: #ffffff !important;
 }
 
 .career-banner {
@@ -441,6 +436,11 @@ section {
 .career-info h3 {
   font-size: 1.4rem;
   margin-bottom: 10px;
+  color: #ffffff !important;
+}
+
+.career-info p {
+  color: #ffffff !important;
 }
 
 .job-meta {
@@ -453,7 +453,7 @@ section {
 
 .job-meta li {
   font-size: 0.9rem;
-  color: #cbd5e1;
+  color: #ffffff !important;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -501,7 +501,6 @@ section {
   background-color: var(--primary);
 }
 
-/* Contact Section */
 .contact-section {
   background: #ffffff;
 }
@@ -603,7 +602,6 @@ section {
   border: 1px solid var(--border);
 }
 
-/* Footer */
 footer {
   background-color: #0f172a;
   color: #64748b;
@@ -613,7 +611,6 @@ footer {
   border-top: 1px solid #1e293b;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .about-grid, .entity-card, .contact-wrapper, .career-banner {
     grid-template-columns: 1fr;
@@ -624,28 +621,4 @@ footer {
   .hero h1 {
     font-size: 1.8rem;
   }
-}/* Careers Section Text Color Change */
-.careers-section {
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-  color: #ffffff !important;
-}
-
-.careers-section .section-title h2 {
-  color: #ffffff !important;
-}
-
-.career-info h3 {
-  color: #ffffff !important;
-}
-
-.career-info p {
-  color: #ffffff !important;
-}
-
-.job-meta li {
-  color: #ffffff !important;
-}
-
-.job-meta i {
-  color: var(--primary);
 }
