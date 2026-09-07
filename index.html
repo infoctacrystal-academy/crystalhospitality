@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crystal Hospitality Pvt. Ltd. | Trade Tower Group</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <div id="welcomeSplash" class="splash-overlay">
+    <div class="splash-particles"></div>
+    <div class="splash-content">
+      <div class="splash-logo-container">
+        <i class="fa-solid fa-gem splash-icon"></i>
+        <div class="splash-ring"></div>
+        <div class="splash-ring ring-outer"></div>
+      </div>
+      <span class="splash-tag">Welcome To Unrivaled Luxury</span>
+      <h1 class="splash-title">Crystal <span class="gradient-text">Hospitality</span></h1>
+      <p class="splash-sub">A Subsidiary of Trade Tower Group</p>
+      <button id="enterBtn" class="btn btn-gold glow-pulse">
+        Enter Experience <i class="fa-solid fa-angles-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <canvas id="particleCanvas"></canvas>
+  <div class="cursor-blur"></div>
+  <div class="ambient-orb orb1"></div>
+  <div class="ambient-orb orb2"></div>
+  <div class="ambient-orb orb3"></div>
+
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <div class="logo-icon-box">
+          <i class="fa-solid fa-gem logo-icon"></i>
+        </div>
+        <div class="logo-text">
+          <h2>Crystal <span>Hospitality</span></h2>
+          <span class="parent-brand"><i class="fa-solid fa-building"></i> Trade Tower Group</span>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link-anim">Home</a></li>
+          <li><a href="#hotel" class="nav-link-anim">Hotel Crystal</a></li>
+          <li><a href="#about" class="nav-link-anim">About</a></li>
+          <li><a href="#services" class="nav-link-anim">Pillars</a></li>
+          <li><a href="#academy" class="nav-link-anim">Academy</a></li>
+          <li><a href="#contact" class="nav-link-anim">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-btn" id="menuBtn"><i class="fa-solid fa-bars-staggered"></i></button>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-shapes">
+      <div class="hero-shape shape-cube"></div>
+      <div class="hero-shape shape-circle"></div>
+    </div>
+    <div class="hero-content">
+      <span class="badge float-anim"><i class="fa-solid fa-location-dot"></i> Gaushala, Kathmandu, Nepal</span>
+      <h1 class="hero-title">Shaping Luxury <span class="gradient-text text-shimmer">Hospitality</span> & Professional Mastery</h1>
+      <p class="hero-p">Operating premier properties and empowering future world-class hospitality leadership under Trade Tower Group.</p>
+      <div class="hero-btns">
+        <a href="https://infoctacrystal-academy.github.io/crystal-training-academy/" target="_blank" rel="noopener noreferrer" class="btn btn-gold glow-effect pulse-btn">
+          Explore Academy Courses <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+        <a href="https://www.crystalpashupati.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline glow-border">
+          Hotel Crystal Pashupati <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="trade-tower-banner">
+    <div class="banner-shine"></div>
+    <div class="container brand-flex">
+      <div class="brand-badge-wrapper">
+        <div class="brand-icon-box">
+          <i class="fa-solid fa-building-user brand-icon"></i>
+        </div>
+        <div>
+          <h3>A Subsidiary of Trade Tower Group</h3>
+          <p>Backed by Nepal's premier corporate conglomerate in infrastructure & corporate development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hotel" class="container section reveal">
+    <div class="section-header">
+      <span class="sub-heading glow-text">Flagship Venue</span>
+      <h2>Hotel Crystal Pashupati</h2>
+    </div>
+    <div class="hotel-showcase-card tilt-element">
+      <div class="hotel-img-wrapper">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80" alt="Hotel Crystal Pashupati" class="hotel-img" />
+        <div class="img-overlay-glow"></div>
+        <span class="hotel-badge badge-bounce"><i class="fa-solid fa-star"></i> Luxury Sanctuary</span>
+      </div>
+      <div class="hotel-details">
+        <span class="sub-heading">Gaushala, Kathmandu</span>
+        <h3>Hotel Crystal Pashupati</h3>
+        <p>Located near the sacred Pashupatinath temple, Hotel Crystal Pashupati integrates traditional cultural elements, fine culinary arts, and international lodging luxury.</p>
+        <ul class="hotel-perks">
+          <li class="perk-item"><i class="fa-solid fa-circle-check"></i> Luxury Accommodations & Executive Suites</li>
+          <li class="perk-item"><i class="fa-solid fa-circle-check"></i> Multi-Cuisine Fine Dining Restaurant & Lounge</li>
+          <li class="perk-item"><i class="fa-solid fa-circle-check"></i> State-of-the-Art Banquet & Event Spaces</li>
+          <li class="perk-item"><i class="fa-solid fa-circle-check"></i> Direct On-Site Practical Ground for Academy Trainees</li>
+        </ul>
+        <a href="https://www.crystalpashupati.com/" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-animated">
+          Visit Hotel Website <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <div class="stat-num-box"><h3 class="counter" data-target="1500">0</h3><span class="plus">+</span></div>
+        <p>Graduates Trained</p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num-box"><h3 class="counter" data-target="98">0</h3><span class="plus">%</span></div>
+        <p>Placement Rate</p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num-box"><h3 class="counter" data-target="1">0</h3><span class="plus"> Group</span></div>
+        <p>Trade Tower Ecosystem</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="container section reveal">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="sub-heading glow-text">Who We Are</span>
+        <h2>Elevating Nepal's Hospitality Future</h2>
+        <p>Crystal Hospitality Private Limited operates at the intersection of hotel management and hands-on skill development. Backed by Trade Tower Group, we bridge academic education with commercial hotel operations.</p>
+        <div class="about-features">
+          <div class="feature-card"><i class="fa-solid fa-shield-halved"></i> Powered by Trade Tower Group</div>
+          <div class="feature-card"><i class="fa-solid fa-graduation-cap"></i> Real Exposure at Crystal Pashupati</div>
+          <div class="feature-card"><i class="fa-solid fa-briefcase"></i> Global Internship Placement Pipelines</div>
+        </div>
+      </div>
+      <div class="about-image-wrapper tilt-element">
+        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Hospitality Training" class="about-img" />
+        <div class="about-floating-badge float-anim">
+          <i class="fa-solid fa-award"></i> High Standard
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section bg-light reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-heading glow-text">What We Do</span>
+        <h2>Our Core Pillars</h2>
+      </div>
+      <div class="grid">
+        <div class="card service-card tilt-element">
+          <div class="card-img-holder">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80" alt="Hotel Operations" />
+          </div>
+          <div class="card-body">
+            <div class="card-icon"><i class="fa-solid fa-hotel"></i></div>
+            <h3>Hotel Operations</h3>
+            <p>Direct management and executive operational standards powered by Hotel Crystal Pashupati.</p>
+          </div>
+        </div>
+        <div class="card service-card tilt-element">
+          <div class="card-img-holder">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80" alt="Crystal Training Academy" />
+          </div>
+          <div class="card-body">
+            <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>Crystal Training Academy</h3>
+            <p>Job-ready vocational development in Front Office, F&B Service, Barista, Housekeeping, and Culinary Arts.</p>
+          </div>
+        </div>
+        <div class="card service-card tilt-element">
+          <div class="card-img-holder">
+            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=600&q=80" alt="Career Placement" />
+          </div>
+          <div class="card-body">
+            <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h3>Career & Internships</h3>
+            <p>Guaranteed career pathways across local luxury hotels and overseas hospitality networks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="academy" class="container section reveal">
+    <div class="section-header">
+      <span class="sub-heading glow-text">Crystal Training Academy</span>
+      <h2>Featured Vocational Pathways</h2>
+    </div>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All Programs</button>
+      <button class="filter-btn" data-filter="frontoffice">Front Office</button>
+      <button class="filter-btn" data-filter="fb">F&B Service & Barista</button>
+      <button class="filter-btn" data-filter="culinary">Culinary Arts</button>
+    </div>
+
+    <div class="grid course-grid">
+      <div class="card course-card tilt-element" data-category="frontoffice">
+        <div class="card-img-holder">
+          <img src="https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=600&q=80" alt="Front Office" />
+        </div>
+        <div class="card-body">
+          <div class="card-badge">Popular</div>
+          <h3>Front Office Management</h3>
+          <p>Master guest relations, PMS software, reservation workflows, and executive front desk management.</p>
+        </div>
+      </div>
+
+      <div class="card course-card tilt-element" data-category="fb">
+        <div class="card-img-holder">
+          <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=80" alt="F&B Service and Barista" />
+        </div>
+        <div class="card-body">
+          <div class="card-badge">In Demand</div>
+          <h3>F&B Service & Barista</h3>
+          <p>Learn high-end dining etiquette, mixology, table service, and espresso brewing technique.</p>
+        </div>
+      </div>
+
+      <div class="card course-card tilt-element" data-category="culinary">
+        <div class="card-img-holder">
+          <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80" alt="Culinary Arts" />
+        </div>
+        <div class="card-body">
+          <div class="card-badge">Certified</div>
+          <h3>Commercial Culinary Arts</h3>
+          <p>Practical kitchen workflow, food safety, menu creation, and multi-cuisine preparation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section bg-light reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-heading glow-text">Get In Touch</span>
+        <h2>Connect With Our Team</h2>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="info-item tilt-element">
+            <div class="info-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Headquarters</h4>
+              <p>Gaushala, Kathmandu, Nepal</p>
+            </div>
+          </div>
+          <div class="info-item tilt-element">
+            <div class="info-icon-box"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Direct Call / WhatsApp</h4>
+              <p><a href="tel:+9779768571242" class="contact-link">+977 9768571242</a></p>
+            </div>
+          </div>
+          <div class="info-item tilt-element">
+            <div class="info-icon-box"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email Inquiries</h4>
+              <p><a href="mailto:infocta.crystal@gmail.com" class="contact-link">infocta.crystal@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="info-item tilt-element">
+            <div class="info-icon-box"><i class="fa-solid fa-building"></i></div>
+            <div>
+              <h4>Parent Group</h4>
+              <p>Trade Tower Group</p>
+            </div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form tilt-element">
+          <div class="input-group">
+            <input type="text" id="name" placeholder=" " required />
+            <label for="name">Your Full Name</label>
+            <span class="input-line"></span>
+          </div>
+          <div class="input-group">
+            <input type="email" id="email" placeholder=" " required />
+            <label for="email">Your Email Address</label>
+            <span class="input-line"></span>
+          </div>
+          <div class="input-group">
+            <textarea id="message" rows="4" placeholder=" " required></textarea>
+            <label for="message">Your Message or Course Inquiry</label>
+            <span class="input-line"></span>
+          </div>
+          <button type="submit" class="btn btn-gold glow-pulse">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Crystal Hospitality Private Limited. All Rights Reserved.</p>
+      <p class="footer-sub">A Member of <strong>Trade Tower Group</strong></p>
+    </div>
+  </footer>
+
+</body>
+</html>
