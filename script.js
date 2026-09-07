@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const vacanciesContainer = document.getElementById('vacancies-container');
   
   if (vacanciesContainer) {
-    // Single active vacancy (8:00 AM - 3:00 PM shift)
     const vacancies = [
       {
         id: 1,
@@ -41,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Handle contact form submission
   const form = document.getElementById('contactForm');
   const submitBtn = document.getElementById('submitBtn');
 
